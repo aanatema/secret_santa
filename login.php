@@ -57,6 +57,9 @@
                         echo "Votre connexion est un succès : " . $user['alias'] . ".";
                         // Etape 7 : Se souvenir que l'utilisateur s'est connecté pour la suite en utilisant la globale SESSION
                         $_SESSION['connected_id'] = $user['id'];
+                        $location = ("profil.php" . '?' . "user_id=" . $_SESSION['connected_id']);
+                        header("Location:$location");
+                        exit();
                     }
                 }
                 ?>
