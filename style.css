@@ -1,0 +1,450 @@
+body {
+    background-color: rgb(34, 0, 51);
+    font-family: Arial;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body>header {
+    display: flex;
+    justify-content: space-between;
+    width: 80em;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    position: inherit;
+    background-color: #ee00ff;
+    height: 0em;
+    z-index: 0;
+    align-items: flex-start;
+
+}
+
+#menu {
+    background-color: #9e1971;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+body>header div {
+    margin-right: 3em;
+}
+
+body>header img {
+    height: 10rem;
+}
+
+body>header #menu {
+    display: flex;
+    width: 50%;
+    align-items: stretch;
+
+}
+
+body>footer #menu a {
+    flex: 1;
+    text-align: center;
+    font-size: 4rem;
+}
+
+body>header a:hover {
+    background-color: rgb(252, 114, 183);
+}
+
+body>header ul {
+    list-style: none;
+}
+
+body>header #user {
+    margin-top: 0.5em;
+
+}
+
+body>header #user>a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 5rem;
+}
+
+body>header #user ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    margin-left: -5em;
+    background-color: #c016ef;
+    z-index: 1;
+}
+
+body>header #user ul li a {
+    display: block;
+    width: 10em;
+    padding: 1em;
+    border-bottom: 1px solid #99b;
+}
+
+body>header #user:hover ul {
+    display: block;
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80em;
+    margin: 0 auto 2em auto;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#wrapper aside {
+    background-color: rgb(34, 0, 51);
+    /* flex: 1;
+    height: 100em; */
+    left: 1em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+
+#wrapper aside img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 55em;
+    object-position: center;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+
+}
+
+#wrapper aside section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    margin-left: 2em;
+    font-size: 2rem;
+    width: 50rem;
+}
+
+#wrapper aside section p {
+    height: 4em;
+}
+
+#wrapper main {
+    flex: 3;
+    height: 80vh;
+    overflow-y: scroll;
+    z-index: 1;
+    margin-top: 1em;
+    margin-bottom: 15rem;
+}
+
+#wrapper main article {
+    background-color: #631db3;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    min-height: 6em;
+    height: auto;
+    width: -moz-available;
+    flex: 1;
+    font-size: 3rem;
+}
+
+#wrapper main article h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1em;
+
+}
+
+#wrapper main article time {
+    float: left;
+}
+
+#wrapper main article address {
+    text-align: right;
+    margin-bottom: 1em;
+}
+
+#wrapper main article p {
+    margin: 0;
+}
+
+#wrapper main article footer {
+    margin-top: 1em;
+    text-align: right;
+}
+
+#wrapper main article footer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: -1em;
+    float: left;
+    font-size: 1em;
+}
+
+#wrapper main article footer form .like {
+    font-size: 1.5em;
+    border: none;
+    background: none;
+}
+
+#wrapper.admin {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper.admin aside {
+    background-color: rgb(34, 0, 51);
+    margin-left: 1em;
+    border-radius: 0;
+    padding: 0;
+    display: block;
+    flex: 1;
+    overflow-y: scroll;
+    height: 80vh;
+    margin-top: 1em
+}
+
+#wrapper.admin main {
+    flex: 2;
+    background-color: rgb(34, 0, 51);
+    border-radius: 0;
+    padding: 0;
+}
+
+#wrapper.admin h2 {
+    padding: 2em;
+    text-align: center;
+}
+
+#wrapper.admin h3 {
+    margin: 0;
+    font-size: 2em
+}
+
+#wrapper.admin nav {
+    text-align: right;
+    background-color: rgb(165, 72, 232);
+    padding: 2em
+}
+
+#wrapper.admin article {
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+#wrapper.admin article p {
+    float: left;
+    margin: 0;
+}
+
+
+.parameters dl dt {
+    float: right;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+.parameters dl dd {
+    margin-left: 15em;
+    line-height: 1.5em;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.contacts article {
+    width: 25em;
+    height: 7em;
+    margin-right: 1em;
+}
+
+.contacts article img {
+    float: right;
+    object-position: center;
+    object-fit: cover;
+    width: 7em;
+}
+
+form dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 4rem;
+}
+
+form dl dt {
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+form dl dd input {
+    width: 22rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+
+form dl dd textarea {
+    width: 40em;
+    height: 15em;
+}
+
+form input {
+    background-color: rgb(165, 72, 232);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 0.2em;
+    font-size: 2rem
+}
+
+
+
+#wrapper .class main {
+    flex: 3;
+    padding-left: 1em;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+#wrapper .class main article {
+    background-color: red;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+.class main article h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1em;
+
+}
+
+.cropped {
+    width: 100%;
+    height: 50em;
+    overflow: hidden;
+    border-radius: 4em;
+    display: block;
+    background-color: #d8aad0e8;
+}
+
+#blason {
+    width: 7em;
+    height: 7em;
+    overflow: hidden;
+    border-radius: 100%;
+    display: block;
+    background-color: #d8aad0e8;
+}
+
+#followers {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+body>footer {
+    /* Le footer est positionné en fixed en bas de page, et ses bords collent à l'extrême gauche et l'extrême droite de la page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body>footer>nav>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    /* Cela va aligner les éléments du menu au centre (vu qu'ils sont en 'inline-block') */
+
+}
+
+body>footer>nav>ul>li {
+    display: inline-block;
+}
+
+body>footer>nav>ul>li>a:link,
+body>footer>nav>ul>li>a:visited {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    /* Ajout de bordures à gauche et à droite de chaque élément de menu (pour simuler les lignes de séparation) */
+    border-right: 1px solid #111;
+    border-left: 1px solid #222;
+}
+
+body>footer>nav>ul>li>a:hover,
+body>footer>nav>ul>li>a:active,
+body>footer>nav>ul>li>a:focus {
+    background-color: black;
+}
+
+/* Suppression des bordures à gauche pour le 1er élément et à droite pour le dernier élément de menu. */
+body>footer>nav>ul>li:first-child>a {
+    border-left: none;
+}
+
+body>footer>nav>ul>li:last-child>a {
+    border-right: none;
+}
+
+#désabonnement {
+    background-color: rgb(165, 72, 232);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 0.2em;
+    font-size: 2rem
+}
