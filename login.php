@@ -1,4 +1,6 @@
-<?php include("head.php"); ?>
+<?php include("BDD.php");
+include("session.php");
+include("head.php"); ?>
 <!doctype html>
 <html lang="fr">
 <title>ReSoC - Connexion</title>
@@ -35,7 +37,6 @@
 
 
                     // Etape 3 : Ouvrir une connexion avec la base de donnée.
-                    include("BDD.php");
                     // Etape 4 : Petite sécurité
                     // pour éviter les injection sql : https://www.w3schools.com/sql/sql_injection.asp
                     $emailAVerifier = $mysqli->real_escape_string($emailAVerifier);

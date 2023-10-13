@@ -1,3 +1,5 @@
+<?php include("BDD.php") ?>
+<?php include("session.php"); ?>
 <?php include("head.php"); ?>
 <!doctype html>
 <html lang="fr">
