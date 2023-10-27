@@ -39,12 +39,17 @@ body>header {
     padding-bottom: 2em;
 }
 
-body>header div {
-    margin-right: 3em;
+body>header nav div {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+    border-radius: 100%;
 }
 
-body>header img {
-    height: 10rem;
+body>header div img {
+    width: 7rem;
 }
 
 body>header #menu {
@@ -329,9 +334,9 @@ form input {
     color: white;
     border: none;
     padding: 0.2em;
-    font-size: 2rem
+    font-size: 2rem;
+    margin: 1rem
 }
-
 
 
 #wrapper .class main {
@@ -365,14 +370,14 @@ form input {
     background-color: #d8aad0e8;
 }
 
-#blason {
+/* #blason {
     width: 7em;
     height: 7em;
     overflow: hidden;
     border-radius: 100%;
     display: block;
     background-color: #d8aad0e8;
-}
+} */
 
 #followers {
     display: flex;

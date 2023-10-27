@@ -7,7 +7,7 @@
 
     <div>
         <nav id="user">
-            <a href="<?php if ($_SESSION['connected_id'] === null) {
+            <a href="<?php if ($userId === null) {
                 echo "login.php";
             } ?>">
                 <?php if ($_SESSION['connected_id'] !== null) {
@@ -15,19 +15,27 @@
                     $res = $mysqli->query($lInstructionSql);
                     $user = $res->fetch_assoc();
                     echo $user['alias'];
+                    ?>
+                </a>
+                <ul>
+                    <li><a href="settings.php?user_id=<?php echo $userId ?>">Paramètres</a></li>
+                    <li><a href="create_event.php?user_id=<?php echo $userId ?>">Créer un événement</a></li>
+                    <li><a href="logout.php">Déconnexion</a></li>
+                </ul>
+
+                <?php
                 } else { ?>
-                    <img src="deconnected_user.jpg" style="border-radius:100%" />
-                    <?php
+                <div>
+                    <img src="deconnected_user.jpg" />
+                </div>
+                </a>
+                <ul>
+                    <li><a href="login.php">Connexion</a></li>
+                    <li><a href="registration.php">Déconnexion</a></li>
+                </ul>
+                <?php
                 }
                 ?>
-            </a>
-            <ul>
-                <li><a href="settings.php?user_id=<?php echo $userId ?>">Paramètres</a></li>
-                <li><a href="followers.php?user_id=<?php echo $userId ?>">Mes suiveurs</a></li>
-                <li><a href="subscriptions.php?user_id=<?php echo $userId ?>">Mes abonnements</a></li>
-                <li><a href="login.php">Connexion</a></li>
-                <li><a href="logout.php">Déconnexion</a></li>
-            </ul>
         </nav>
     </div>
 </header>

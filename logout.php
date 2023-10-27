@@ -24,6 +24,7 @@
                 <h2>Déconnexion</h2>
                 <form id="logout" action="<?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['connected_id'] = null;
+                    header("refresh: 0.5");
                 } ?>" method="post">
                     <input name='logout' value="se déconnecter" type='submit'>
                 </form>

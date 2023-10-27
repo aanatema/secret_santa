@@ -24,13 +24,13 @@
         </aside>
         <main>
             <form method="post">
-                <input name="title" value="Titre" />
-                <input name="date" type="date" value="Date de l'événement" />
-                <input name="lieu" type="textarea" value="Lieu de l'événement" />
-                <input name="description" type="textarea" value="Invitation" />
-                <input name="budget" type="number" value="Budget" />
-                <input name="invité" type="mail" value="Invité" />
-                <input type="submit" value="Ajouter un invité" />
+                <input name="title" value="Titre" /><br>
+                <input name="date" type="date" value="Date de l'événement" /><br>
+                <textarea name="lieu" value="Lieu de l'événement" rows="3" cols="25"> </textarea><br>
+                <textarea name="description" value="Invitation" rows="55" cols="150"> </textarea><br>
+                <input name="budget" type="number" value="Budget" /><br>
+                <input name="invité" type="mail" value="Invité" /><br>
+                <input type="submit" value="Ajouter un invité" /><br>
 
                 <input type="submit" />
 
